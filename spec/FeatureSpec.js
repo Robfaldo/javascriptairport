@@ -24,7 +24,7 @@ describe('FeatureTests', function(){
     var airport = new Airport;
     // Excercise
     plane.land(airport)
-    plane.takeOff()
+    plane.takeOff(airport)
     // Verify
     console.log(airport.planes())
     expect(airport.planes()).toEqual([])

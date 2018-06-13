@@ -22,7 +22,7 @@ describe('Plane', function(){
       var plane = new Plane();
       var airport = jasmine.createSpyObj('airport',['clearForTakeOff'])
       // Exercise
-      plane.takeOff();
+      plane.takeOff(airport);
       // Verify
       expect(airport.clearForTakeOff).toHaveBeenCalledWith(plane)
     });
